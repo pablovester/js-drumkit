@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rock+Salt" rel="stylesheet">t">
   <link rel="stylesheet" href="style.css">
- <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
 
-  <div class="keys">
+  <div class="title flex">
+    <p>javascript drum kit</p>
+    <span>Press the keys to make the sounds!</span>
+  </div>
+
+  <div class="keys flex">
     <div data-key="65" class="key">
       <kbd>A</kbd>
       <span class="sound">clap</span>
@@ -58,7 +64,9 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-
+  <div class="footer flex">
+    coded by <a href="http://github.com/pablovester">pablovester</a>
+  </div>
 
 
 

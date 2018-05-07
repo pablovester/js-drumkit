@@ -6,19 +6,49 @@ html {
 body,html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title{
+  flex-direction: column;
+  color: white;
+}
+
+.title p {
+  font-family: 'Rock Salt', cursive;
+  text-transform: capitalize;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.title span {
+  font-size: 3rem;
+}
+
+.title p,
+.title span {
+   text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
 }
 
 .keys {
-  display: flex;
   flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+  min-height: 70vh;
 }
 
 .key {
-  border: .4rem solid black;
+  border: .2rem solid #374B30;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -32,9 +62,9 @@ body,html {
 }
 
 .playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(1.3);
+  border-color: #74FF47;
+  box-shadow: 0 0 1rem #74FF47;
 }
 
 kbd {
@@ -46,5 +76,12 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #74FF47;
+}
+
+.footer {
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
 }
